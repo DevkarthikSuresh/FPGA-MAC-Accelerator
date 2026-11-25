@@ -1,0 +1,10 @@
+build/
+*.vcd
+*.vvp
+*.jou
+*.log
+*.bit
+*.dcp
+.Xil/
+__pycache__/
+exports/
