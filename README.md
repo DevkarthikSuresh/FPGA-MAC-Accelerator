@@ -69,6 +69,4 @@ These are newly measured **software** results, not FPGA throughput or hardware i
 
 ## Hardware notes and provenance
 
-The archived XDC is not verified against the exact board or FPGA part. Do not program a board until its pinout, voltage standards, clock and part number have been confirmed. The legacy design has a fixed two-bit write address, no input-memory initialization, no button debouncing, and a four-bit truncating display. Its constant `always @(*)` anode block can also fail to trigger in simulation. These are preserved as historical limitations rather than silently changed. The new core intentionally has no board-specific interface.
-
-The legacy project dates to 2025; the streaming redesign, testbench and digit software demo were added during the November 2026 repository recovery with AI assistance. Original Vivado project, synthesis reports, timing and waveform records were not recovered. No FPGA resource, power, clock-frequency or hardware-accuracy claim is made for the redesign.
+Do not program a board until its pinout, voltage standards, clock and part number have been confirmed. The legacy design has a fixed two-bit write address, no input-memory initialization, no button debouncing, and a four-bit truncating display. Its constant `always @(*)` anode block can also fail to trigger in simulation.
